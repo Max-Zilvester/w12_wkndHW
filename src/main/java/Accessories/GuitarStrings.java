@@ -4,7 +4,7 @@ import MusicalIntrument.Instrument;
 
 public class GuitarStrings extends Instrument {
 
-    int frets;
+    private int frets;
 
     public GuitarStrings(String name, String description, double buyPrice, double sellPrice, int frets) {
         super(name, description, buyPrice, sellPrice);
