@@ -22,7 +22,7 @@ public class GuitarTest {
 
     @Test
     public void guitarHasRawMaterials(){
-        assertEquals("dude", guitar1.getRawMaterials());
+        assertEquals("Alder", guitar1.getRawMaterials());
     }
 
 
