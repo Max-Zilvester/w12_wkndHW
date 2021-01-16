@@ -1,4 +1,17 @@
 package Accessories;
 
-public class GuitarStrings {
+import MusicalIntrument.Instrument;
+
+public class GuitarStrings extends Instrument {
+
+    int frets;
+
+    public GuitarStrings(String name, String description, double buyPrice, double sellPrice, int frets) {
+        super(name, description, buyPrice, sellPrice);
+        this.frets = frets;
+    }
+
+    public int getFrets() {
+        return frets;
+    }
 }
