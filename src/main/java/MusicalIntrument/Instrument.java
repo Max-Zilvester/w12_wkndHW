@@ -10,7 +10,7 @@ public abstract class Instrument {
     private double buyPrice;
     private double sellPrice;
 
-    public Instrument(String name, String rawMaterials, String colour, String type, String description, double buyPrice, double sellPrice){
+    public Instrument(String name, String rawMaterials, double buyPrice, double sellPrice){
         this.name = name;
         this.rawMaterials = rawMaterials;
         this.colour = colour;
