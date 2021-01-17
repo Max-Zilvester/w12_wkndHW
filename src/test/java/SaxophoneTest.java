@@ -20,4 +20,9 @@ public class SaxophoneTest {
     public void saxophoneHasKeys(){
         assertEquals(8, saxophone.getKeys());
     }
+
+    @Test
+    public void saxophoneHasSound() {
+        assertEquals("Classic", saxophone.playSound("Classic"));
+    }
 }

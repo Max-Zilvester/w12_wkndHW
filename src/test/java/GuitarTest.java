@@ -25,5 +25,15 @@ public class GuitarTest {
         assertEquals("Alder", guitar1.getRawMaterials());
     }
 
+    @Test
+    public void guitarHasSound() {
+        assertEquals("Ding", guitar.playSound("Ding"));
+    }
+
+    @Test
+    public void guitarMarkupValue(){
+        assertEquals(5, guitar.calculateMarkup(), 0.01);
+    }
+
 
 }

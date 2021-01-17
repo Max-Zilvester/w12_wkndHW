@@ -1,8 +1,9 @@
 package Instrument;
 
+import Behaviours.IPlay;
 import MusicalIntrument.Instrument;
 
-public class Piano extends Instrument{
+public class Piano extends Instrument implements IPlay {
 
     private int pedals;
 
@@ -14,4 +15,10 @@ public class Piano extends Instrument{
     public int getPedals() {
         return pedals;
     }
+
+    @Override
+    public String playSound(String sound) {
+        return sound;
+    }
+
 }

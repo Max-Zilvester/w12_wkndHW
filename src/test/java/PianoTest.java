@@ -20,8 +20,9 @@ public class PianoTest {
         assertEquals(3, piano.getPedals());
     }
 
-//    @Test
-//    public void guitarHasRawMaterials(){
-//        assertEquals("dude", .getRawMaterials());
-//    }
+
+    @Test
+    public void pianoHasSound() {
+        assertEquals("Chime", piano.playSound("Chime"));
+    }
 }

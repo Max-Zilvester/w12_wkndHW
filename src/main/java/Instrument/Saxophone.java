@@ -1,9 +1,10 @@
 package Instrument;
 
+import Behaviours.IPlay;
 import MusicalIntrument.Instrument;
 
 
-public class Saxophone extends Instrument {
+public class Saxophone extends Instrument implements IPlay {
 
     private int keys;
 
@@ -14,5 +15,9 @@ public class Saxophone extends Instrument {
 
     public int getKeys() {
         return keys;
+    }
+
+    public String playSound(String sound){
+        return sound;
     }
 }
